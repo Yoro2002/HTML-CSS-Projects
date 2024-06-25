@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-green: #eaf9e7;
+    --dark-green: #013237;
+    --bright-green: #4ca771;
+    --white: #ffffff;
+    --font-1: "Montserrat";
+    --font-2: "Fraunces";
+    --font-3: "Poppins";
+}
+
+body {
+    height: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fraunces", "Montserrat", sans-serif;
+}
+
+main {
+    margin: 50px auto;
+}
+
+.product picture img {
+    width: 350px;
+    height: 243px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.product .product-content {
+    background-color: var(--light-green);
+    width: 350px;
+    height: 423px;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.product-category {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark-green);
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    color: var(--dark-green);
+    margin-bottom: 10px;
+}
+
+.product-info {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: var(--dark-green);
+    margin-bottom: 30px;
+}
+
+.flex-group {
+    display: flex;
+    align-items: center;
+}
+
+.product-price {
+    margin-right: 20px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--bright-green);
+}
+
+.product-original-price {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: var(--dark-green);
+    text-decoration: line-through;
+}
+
+button {
+    margin-top: 20px;
+    width: 310px;
+    height: 44px;
+    background-color: var(--bright-green);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: var(--dark-green);
+    cursor: pointer;
+}
+
+.fa-solid {
+    margin-right: 10px;
+}
+
+@media (min-width: 1280px) {
+
+    .product {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .product picture img {
+        width: 328px;
+        height: 432px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .product .product-content {
+        width: 329px;
+        height: 433px;
+        padding: 30px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    button {
+        width: 259px;
+    }
+}

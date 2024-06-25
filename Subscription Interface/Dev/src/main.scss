@@ -1,0 +1,149 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --heading-font-color: #C73866;
+    --paragraph-font-color: #9F8189;
+    --container-color: #E7E7E7;
+    --main-color: #FFBE02;
+    --white: #ffffff;
+    --main-color-opacity1:rgba(255, 192, 2, 30%);
+    --main-color-opacity2:rgba(255, 192, 2, 40%);
+    --main-color-opacity3:rgba(255, 192, 2, 50%);
+    --box-shadow-button-color-Opacity: rgba(150, 102, 6, 35%);
+    --main-heading-font-size: 21px;
+    --info-font-size: 14px;
+    --third-font-size: 12px;
+    --forth-font-size: 13px;
+}
+
+body {
+    background-image: url("/Subscription Interface/Dev/assets/Bg.svg");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Red Hat Display", "Sans-serif";
+}
+
+.container {
+    background-color: var(--container-color);
+    width: 295px;
+    height: 513px;
+    border-radius: 10px;
+}
+
+#anime{
+    margin-left: -11.5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+#heading {
+    font-size: var(--main-heading-font-size);
+    font-weight: 900;
+    color: var(--heading-font-color);
+    text-align: center;
+}
+
+#para {
+    font-size: var(--info-font-size);
+    color: var(--paragraph-font-color);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-group {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color-opacity1);
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#vid-icon {
+    background-color: var(--main-color-opacity2);
+    width: 48px;
+    height: 48.22px;
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+}
+
+#price {
+    font-size: var(--third-font-size);
+    text-align: center;
+    padding-top: 10px;
+}
+
+#period {
+    margin-bottom: -5px;
+    color: var(--heading-font-color);
+    font-weight: 900;
+}
+
+#amount {
+    color: var(--paragraph-font-color);
+}
+
+#change a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 800;
+    font-size: var(--third-font-size);
+}
+
+#change a:hover {
+    color: var(--main-color-opacity3);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons button {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    width: 251px;
+    height: 39px;
+    color: var(--white);
+    font-weight: 800;
+    font-size: var(--forth-font-size);
+    margin-bottom: 20px;
+    box-shadow: .5rem .4rem 1rem var(--box-shadow-button-color-Opacity);   
+}
+
+.buttons button:hover {
+    background-color: var(--main-color-opacity2);
+    color: var(--heading-font-color);
+}
+
+.buttons a {
+    text-decoration: none;
+    color: var(--paragraph-font-color);
+    font-weight: 800;
+    font-size: var(--forth-font-size);
+}
+
+.buttons a:hover {
+    color: var(--heading-font-color);
+}

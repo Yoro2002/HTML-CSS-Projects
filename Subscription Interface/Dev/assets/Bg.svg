@@ -1,0 +1,27 @@
+<svg id="Bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="900" viewBox="0 0 1440 900">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" fx="0.8257295489311218" fy="0.7117197513580322" r="0.471" gradientTransform="translate(-0.067) scale(1.133 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.144" stop-color="#fff3d4"/>
+      <stop offset="0.46" stop-color="#ffdb7c"/>
+      <stop offset="0.717" stop-color="#ffc93b"/>
+      <stop offset="0.904" stop-color="#ffbe13"/>
+      <stop offset="1" stop-color="#ffba04"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" fx="0.1597147136926651" fy="0.3500792980194092" r="0.607" gradientTransform="translate(0.142) scale(0.716 1)" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-3" cx="0.5" cy="0.5" fx="0.32957175374031067" fy="0.8619571328163147" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.106" stop-color="#fff7e3"/>
+      <stop offset="0.729" stop-color="#ffcb44"/>
+      <stop offset="1" stop-color="#ffba04"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-4" fx="0.3361906409263611" fy="0.8778687715530396" r="0.522" gradientTransform="translate(0.04) scale(0.921 1)" xlink:href="#radial-gradient-3"/>
+  </defs>
+  <rect id="Rectangle_1" data-name="Rectangle 1" width="1440" height="900" fill="#f9e0b1"/>
+  <g id="Circles_bg" data-name="Circles bg">
+    <path id="Path_2" data-name="Path 2" d="M412,177c0,160.16-129.84,290-290,290A288.8,288.8,0,0,1,0,440.16V0H351.73A288.715,288.715,0,0,1,412,177Z" opacity="0.34" fill="url(#radial-gradient)"/>
+    <path id="Path_3" data-name="Path 3" d="M1440,597.04V900H979c0-182.25,147.75-330,330-330A328.725,328.725,0,0,1,1440,597.04Z" opacity="0.34" fill="url(#radial-gradient-2)"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="145" cy="145" r="145" transform="translate(913 69)" opacity="0.34" fill="url(#radial-gradient-3)"/>
+    <path id="Path_4" data-name="Path 4" d="M428,778a144.9,144.9,0,0,1-66.6,122H204.61A145.006,145.006,0,1,1,428,778Z" opacity="0.34" fill="url(#radial-gradient-4)"/>
+  </g>
+</svg>

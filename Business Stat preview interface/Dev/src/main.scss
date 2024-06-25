@@ -1,0 +1,176 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --Primary-background-color: rgb(1, 50, 55);
+    --Primary-left-flex-background-color: rgb(44, 105, 117);
+    --Primary-span-color: rgb(104, 178, 160);
+    --Neutral-color: rgb(255, 255, 255);
+    --secondary-color-opacity: rgba(104, 178, 159, 60%);
+
+    //Responsive desktop font size
+    --font-size-1: 27px;
+    --font-size-2: 20px;
+    --font-size-3: 12px;
+
+    //Responsive mobile font size
+    --mobile-font-size-1: 24px;
+    --mobile-font-size-2: 22px;
+    --mobile-font-size-3: 19px;
+    --mobile-font-size-4: 17px;
+}
+
+body {
+    background-color: var(--Primary-background-color);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", "Lexend Deca", "Sans-serif";
+}
+
+.details {
+    width: 550px;
+    height: 426px;
+    background-color: var(--Primary-left-flex-background-color);
+    margin-top: -8px;
+    border-radius: 10px 0 0 10px;
+    padding: 60px 50px 60px 50px;
+}
+
+.details h1 {
+    font-size: var(--font-size-1);
+    font-weight: bolder;
+    color: var(--Neutral-color);
+    margin-bottom: 30px;
+}
+
+.details h1 span {
+    color: var(--Primary-span-color);
+}
+
+.details #moreInfo {
+    color: var(--Neutral-color);
+    font-size: var(--font-size-3);
+    font-weight: 200;
+    margin-bottom: 65px;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.margin-shift {
+    margin-bottom: -5px;
+    font-size: 20px;
+    color: var(--Neutral-color);
+    font-weight: bolder;
+}
+
+.bottom-style {
+    font-family: "Lexend Deca";
+    font-size: var(--font-size-3);
+    color: var(--Neutral-color);
+}
+
+.image video {
+    width: 550px;
+    height: 426px;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+}
+
+@media (max-width: 1000px) {
+    .details h1 {
+        font-size: var(--mobile-font-size-1);
+    }
+}
+
+@media (max-width: 950px) {
+    .details h1 {
+        font-size: var(--mobile-font-size-2);
+    }
+
+    .details {
+        width: 530px;
+        height: 406px;
+    }
+
+    .image video {
+        width: 530px;
+        height: 406px;
+    }
+}
+
+@media (max-width: 900px) {
+    .details h1 {
+        font-size: var(--mobile-font-size-3);
+    }
+}
+
+@media (max-width: 890px) {
+
+    body {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .details {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .image video {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .details h1 {
+        font-size: var(--mobile-font-size-1);
+        text-align: center;
+    }
+
+    .details #moreInfo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .details {
+        width: 326px;
+        height: 426px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .details h1 {
+        font-size: var(--mobile-font-size-4);
+    }
+
+
+
+    .image video {
+        width: 326px;
+        height: 206px;
+    }
+
+    .details #moreInfo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}

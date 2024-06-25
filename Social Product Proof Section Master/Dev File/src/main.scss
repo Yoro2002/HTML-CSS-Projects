@@ -1,0 +1,334 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --Primary-color1:#4FADC0;
+    --Primary-color2:#193948;
+    --neutral-color: #ffffff;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    height: 100vh;
+    background-image: url("/Social Product Proof Section Master/Dev File/assets/Bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.container {
+    margin: 30px;
+}
+
+.top-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heading-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--Primary-color2);
+    margin-top: 30px;
+}
+
+.heading-content p {
+    font-size: 1em;
+    color: var(--Primary-color1);
+}
+
+.rate-content {
+    margin-top: 20px;
+}
+
+.flex-group {
+    background-color: var(--Primary-color1);
+    width: 305px;
+    height: 65px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.flex-group p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.flexbox {
+    background-color: var(--Primary-color2);
+    width: 305px;
+    height: 220px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.flexbox .profile-detail {
+    display: flex;
+}
+
+.flexbox .profile-detail div {
+    margin-left: 10px;
+}
+
+.profile {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.flexbox .profile-detail div p span {
+    color: var(--Primary-color1);
+}
+
+.flexbox .profile-detail div .profile-name {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--neutral-color);
+    margin-bottom: -5px;
+}
+
+.flexbox p {
+    color: var(--neutral-color);
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 40px;
+    }
+
+    .heading-content p {
+        font-size: 1.2em;
+    }
+
+    .flex-group {
+        width: 605px;
+    }
+    
+    .flex-group p {
+        font-size: 1.2em;
+    }
+
+    .star {
+        height: 24px;
+    }
+
+    .flexbox {
+        width: 605px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        padding: 30px;
+    }
+
+    .profile {
+        margin-top: 10px;
+        width: 49px;
+        height: 49px;
+    }
+
+    .flexbox .profile-detail {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+
+    .flexbox p {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .container {
+        margin: 50px;
+    }
+
+    .heading-content h1 {
+        font-size: 3em;
+    }
+
+    .heading-content p {
+        font-size: 2em;
+    }
+
+    .flex-group {
+        width: 805px;
+        height: 85px;
+    }
+    
+    .flex-group p {
+        font-size: 2em;
+    }
+
+    .star {
+        height: 24px;
+    }
+
+    .flexbox {
+        width: 805px;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        padding: 30px;
+    }
+
+    .profile {
+        margin-top: 10px;
+        width: 89px;
+        height: 89px;
+    }
+
+    .flexbox .profile-detail {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+
+    .flexbox p {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .container {
+        margin: 50px;
+    }
+
+    .top-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .heading-content h1 {
+        font-size: 3em;
+        margin-right: 100px;
+    }
+
+    .heading-content p {
+        font-size: 1.2em;
+    }
+
+    .rate-content {
+        margin-right: -20px;
+    }
+
+    #rate-box2 {
+        margin-left: 40px;
+    }
+
+    #rate-box3 {
+        margin-left: 80px;
+    }
+
+    .flex-group {
+        width: 580px;
+        height: 53px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px;
+    }
+    
+    .flex-group p {
+        font-size: 1.2em;
+        margin-left: -60px;
+    }
+
+    .star {
+        height: 22px;
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flexbox {
+        width: 398px;
+        height: 288px;
+        padding: 30px;
+    }
+
+    #shift {
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+
+    #shift2 {
+        margin-left: 20px;
+        margin-top: 80px;
+    }
+
+    .profile {
+        margin-top: -15px;
+        width: 49px;
+        height: 49px;
+    }
+
+    .flexbox .profile-detail {
+        display: flex;
+        flex-direction: row;
+        margin-left: -4em;
+    }
+    
+    .flexbox .profile-detail div {
+        margin-left: 10px;
+    }
+
+    .flexbox .profile-detail div .profile-name {
+        font-size: 1.2rem;
+    }
+
+    .flexbox p {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+}

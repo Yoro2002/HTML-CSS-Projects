@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 181.17 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #293855;
+        font-family: Poppins-Bold, Poppins;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: .04em;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-2" cx="20" cy="20" r="20"/>
+    </clipPath>
+  </defs>
+  <g id="Blog_Profile_Name" data-name="Blog Profile Name">
+    <g>
+      <text class="cls-1" transform="translate(49.35 28.32)"><tspan x="0" y="0">Yorokobi Sensei</tspan></text>
+      <g>
+        <circle class="cls-2" cx="20" cy="20" r="20"/>
+        <g class="cls-3">
+          <image width="3165" height="4747" transform="translate(-1.88 -8.8) scale(.01)" xlink:href="../../Social link profile Design&amp;Developer Pack/HTML&amp;CSS codes/image.jpg"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --Light-Blue: #60cbff;
+    --Neutral-White: #ffffff;
+    --Neutral-Grey: #252525;
+    --Neutral-DarkGrey: #1a1a1a;
+    --Neutral-off-Black: #000000;
+}
+
+body {
+    background-color: var(--Neutral-off-Black);
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    place-content: center;
+}
+
+.profile-card {
+    background-color: var(--Neutral-Grey);
+    color: var(--Neutral-White);
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 400px;
+    text-align: center;
+    border-radius: .75rem;
+}
+
+.profile-card img {
+    margin-bottom: .5rem;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.profile-card h1 {
+    font-size: 1.75rem;
+}
+
+.profile-card .description {
+    color: var(--Light-Blue);
+    margin: .5rem 0 1.5rem;
+    font-weight: 700;
+}
+
+.profile-card ul {
+    margin-top: 1.75rem;
+}
+
+.profile-card ul li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.profile-card ul li a {
+    display: block;
+    background-color: var(--Neutral-DarkGrey);
+    color: var(--Neutral-White);
+    padding: 0.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+.profile-card ul li a i {
+    padding-right: 35px;
+}
+.profile-card ul li a:hover {
+    background-color: var(--Light-Blue);
+    color: var(--Neutral-off-Black);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')

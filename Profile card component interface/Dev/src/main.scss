@@ -1,0 +1,100 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --neutral-font-color: #013237; 
+    --primary-container-color: #eaf9e7; 
+    --primary-relative-container-color: #4ca771;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Kumbh Sans";
+    background-image: url("/Profile card component interface/Dev/Assets/Asset\ 2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 332px;
+    height: 362px;
+    background-color: var(--primary-container-color);
+    border-radius: 15px;
+}
+
+.container-head {
+    background-color: var(--primary-relative-container-color);
+    width: 332px;
+    height: 111px;
+    border-radius: 15px 15px 0 0;
+    margin-left: -12px;
+    position: relative;
+}
+
+.profile-info {
+    text-align: center;
+    position: relative;
+    top: -35px;
+}
+
+.profile-info img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid #eaf9e7;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 800;
+    color: #013237;
+}
+
+.profile-info #email {
+    font-size: 14px;
+    color: var(--neutral-font-color);
+    margin-top: -15px;
+}
+
+.profile-info #country {
+    font-size: 14px;
+    color: var(--neutral-font-color);
+    margin-top: -15px;
+}
+
+.flex-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 5px 25px;
+    text-align: center;
+}
+
+.flex-group .stat-no {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--neutral-font-color);
+    margin-bottom: -5px;
+}
+
+.flex-group .stat-categ {
+    font-size: 13px;
+    color: var(--neutral-font-color);
+}
